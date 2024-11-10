@@ -1,0 +1,217 @@
+:root {
+    /* creating custom property values / variables */
+    --font-family: "Roboto Mono", monospace, san-serif;
+    --box-shadow: 0 0 3rem -8px rgba(0, 0, 0, 0.26);
+    --header-bg: rgb(40, 61, 99);
+    --section-bg: rgba(17, 31, 45, 0.5);
+    --section-header: rgb(40, 61, 99);
+    --bg-color: grey;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  html {
+    font-size: 50%;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    font-size: 1.5rem;
+  }
+  
+  header,
+  footer {
+    background-color: var(--header-bg);
+    color:white;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; /* Adjust gap as needed for spacing */
+    background-color: var(--header-bg); /* Or any preferred color */
+    color: white;
+    padding: 1em;
+}
+
+#img-container {
+    width: 100px; /* Controls the overall size of the image container */
+    height: 100px;
+    overflow: hidden; /* Ensures the image doesn't exceed the container */
+    box-shadow: var(--box-shadow); /* Adds shadow behind the image */
+}
+
+#profile {
+    width: 100%; 
+    height: auto;
+}
+
+  ul {
+    list-style: none;
+  }
+  
+  nav {
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    display: grid;
+  }
+  
+  nav ul {
+    text-align: center;
+  }
+  
+  nav ul li {
+    padding: 1rem 2rem;
+    cursor: pointer;
+  }
+  
+  nav ul li a:link,
+  nav ul li a:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li:hover {
+    background-color: var(--bg-color);
+    color: #000;
+  }
+  
+  nav ul li a:hover {
+    color: #000;
+  }
+  
+  main {
+    color: var(--bg-color);
+    padding: 2rem;
+  }
+  
+
+  main :where(h2, h3) {
+    text-align: center;
+  }
+  
+  main h2 {
+    color: var(--bg-color);
+    border-bottom: 3px solid var(--bg-color);
+  }
+  .main-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+  }
+  main h3 {
+    background-color: var(--section-header);
+    color: white;
+  }
+  
+  main :where(section, h3) {
+    padding: 1.5rem 2rem;
+  }
+
+
+  .course-work-container {
+    display: grid;
+    gap: 2rem;
+    width: 100%;
+  }
+  
+  .state-info-container {
+    display: grid;
+    gap: 1rem;
+    box-shadow: var(--box-shadow);
+    width: 45%;
+  }
+
+  .state-info-container p {
+    color: #000;
+    text-align: center;
+  }
+  
+  .course-work li {
+    color: #000;
+  }
+  
+  .course-work {
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .state-img-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .certificate {
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .certificate h2 {
+    color: #000;
+    text-align: center;
+  }
+  
+  .buttons {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  
+  .completed {
+    background-color: rgb(40, 61, 99);
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  
+  .not-completed {
+    background-color: #f3e7d1;
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  
+  footer {
+    text-align: center;
+    padding:2rem;
+  }
+  
+  #menu {
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 3px 7px 6px;
+    background-color: #eee;
+    color: #000;
+    width: 100%;
+    height: 5rem;
+  }
+  
+  #menu::before {
+    content: "☰";
+    font-size: 3rem;
+  }
+  
+  #menu.open::before {
+    content: "❎";
+  }
+  
+  .navigation li {
+    display: none;
+  }
+  
+  .open li {
+    display: block;
+    width: 100%;
+  }
+  
+  
