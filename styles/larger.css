@@ -66,8 +66,19 @@
         gap: 1rem; /* Adjust as needed */
         max-width: 100%; /* Optional to keep the buttons from stretching */
     } 
-    #courses {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    button {
+        padding: 1rem;
     }
+    #courses {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        max-width: 960px; /* Max width for the grid */
+        margin: 0 auto; /* Center horizontally */
+        align-items: center;
+        gap: 1rem; /* Optional: space between items */
+        width: 100%;
+        text-align: center;
+      }
+    
   }
