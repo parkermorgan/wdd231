@@ -91,11 +91,11 @@
   
   main {
     color: var(--bg-color);
-    padding: 2rem;
+
   }
   
 
-  main :where(h2, h3) {
+  main :where(h2, h1) {
     text-align: center;
   }
   
@@ -109,12 +109,12 @@
     gap: 2rem;
     justify-content: center;
   }
-  main h3 {
+  main h1 {
     background-color: var(--section-header);
     color: white;
   }
   
-  main :where(section, h3) {
+  main :where(section, h1) {
     padding: 1.5rem 2rem;
   }
 
