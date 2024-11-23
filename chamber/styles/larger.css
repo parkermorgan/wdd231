@@ -48,5 +48,39 @@
         border-left: var(--border);
         border-right: var(--border);
     }
+
+    .header-container {
+        display: flex; 
+        align-items: center; 
+        background-color: var(--background-accent);
+      }
+      
     
+    .header-container img {
+    display:flex;
+    height: 60px; 
+    width: auto;
+    padding-left: 1em;
+    }
+    
+    .header-container h1 {
+    font-size: 2em;
+    margin-left: 10px; 
+    color:white;
+    }
+    
+    #members {
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .member-card {
+        min-width: 400px;
+        height: auto;
+    }
+
+ #members.list {
+    max-width: 60%;
+ }
+
 }

@@ -5,13 +5,68 @@
     --border: 3px solid black;
 }
 
+/* Reset margin and padding for the entire document */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure consistent sizing */
+}
+
 body {
     font-family: var(--font-family);
 }
 
+
+
 #navMenu {
     background-color: var(--background-accent);
 }
+
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    padding-bottom: 10px;
+}
+
+
+#menu.open {
+    transform: rotate(90deg); 
+}
+
+
+#menu::before {
+    content: '☰'; 
+}
+
+#menu.open::before {
+    content: '✖'; 
+}
+
+.menu-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonToggle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: none;
+    border: none;
+    margin-bottom: 1rem; /* Optional: Adds some bottom margin to separate from other content */
+ }
+ 
+ .buttonToggle button {
+     background: none; /* Ensure no background */
+     border: none; /* Remove border */
+     
+     padding: 10px; /* Adjust padding for more button space */
+     cursor: pointer; /* Indicate it's clickable */
+ }
 
 .navLinks {
     display: none;
@@ -52,24 +107,16 @@ body {
 }
 
 .header-container {
-    display: flex; 
-    align-items: center; 
     background-color: var(--background-accent);
-  }
-  
-
-.header-container img {
-height: 60px; 
-width: auto;
-padding-left: 1em;
+    color:white;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1px;
 }
 
-.header-container h1 {
-font-size: 2em;
-margin-left: 10px; 
-color:white;
+.header-container img{
+    display: none
 }
-
 
 .list {
 	display: block;
@@ -78,12 +125,18 @@ color:white;
 	padding: 1rem;
 }
 
-.member-card {
-	display: flex;
-	flex-direction: column;
-	border: 1px solid rgb(0 0 0 /.1);
-	background-color: aliceblue;
-	padding: 1rem;
+.grid .member-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1.5rem; /* Reduce padding to make the cards smaller */
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for floating effect */
+    border: none; /* Remove borders */
+    border-radius: 8px; /* Optional: Rounded corners for a modern look */
+    margin: 1rem auto; /* Add spacing between cards and center them */
+    max-width: 90%; /* Ensure they don't take up the full width on mobile */
+    text-align: center;
 }
 
 .member-card img {
@@ -98,8 +151,70 @@ color:white;
 	display: none;
 }
 
-
 .member-card p,
 a {
 	padding-top: 1rem;
+}
+
+#members.list {
+    display: flex;
+    flex-direction: column; 
+    align-items: stretch; 
+    gap: 0.5rem;
+    width: 100%;
+}
+
+
+#members.list .member-card {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+#members.list .member-card:nth-child(even) {
+    background-color: lightblue; 
+}
+
+
+#members.list .member-card h3,
+#members.list .member-card p,
+#members.list .member-card a {
+    margin: 0; 
+    padding: 0.5rem;
+    text-align: left; 
+}
+
+
+#members.list .member-card a {
+    color: var(--background-accent);
+    text-decoration: none;
+    font-weight: bold;
+    word-break: break-word; 
+}
+
+#members.list .member-card a:hover {
+    text-decoration: underline;
+}
+
+
+#members.grid .member-card {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+footer {
+    background-color: var(--background-accent);
+    text-align: center;
+    color: white;
+    padding: 2rem;
 }
