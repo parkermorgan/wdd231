@@ -1,3 +1,5 @@
+
+
 :root {
     --font-family: "Montserrat", sans-serif;
     --background-color: lightgrey;
@@ -138,7 +140,6 @@ body {
     display: block;
     margin: 0 auto;
     padding-top: 2rem;
-    max-width: 200px;
 }
 
 .list .member-card img {
@@ -199,5 +200,5 @@ footer {
     background-color: var(--background-accent);
     text-align: center;
     color: white;
-    padding: 2rem;
+    padding: 1rem;
 }
