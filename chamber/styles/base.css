@@ -16,8 +16,6 @@ body {
     font-family: var(--font-family);
 }
 
-
-
 #navMenu {
     background-color: var(--background-accent);
 }
@@ -28,15 +26,13 @@ body {
     border: none;
     color: white;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Only animate transform */
     padding-bottom: 10px;
 }
-
 
 #menu.open {
     transform: rotate(90deg); 
 }
-
 
 #menu::before {
     content: '☰'; 
@@ -47,7 +43,7 @@ body {
 }
 
 .menu-container {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -57,16 +53,15 @@ body {
     grid-template-columns: 1fr 1fr;
     background: none;
     border: none;
-    margin-bottom: 1rem; /* Optional: Adds some bottom margin to separate from other content */
- }
- 
- .buttonToggle button {
-     background: none; /* Ensure no background */
-     border: none; /* Remove border */
-     
-     padding: 10px; /* Adjust padding for more button space */
-     cursor: pointer; /* Indicate it's clickable */
- }
+    margin-bottom: 1rem; /* Adds bottom margin */
+}
+
+.buttonToggle button {
+    background: none; /* Ensure no background */
+    border: none; /* Remove border */
+    padding: 10px; /* Adjust padding for more button space */
+    cursor: pointer; /* Indicate it's clickable */
+}
 
 .navLinks {
     display: none;
@@ -76,7 +71,7 @@ body {
 }
 
 .navLinks.open {
-    display:grid;
+    display: grid;
 }
 
 .navLinks li {
@@ -89,131 +84,117 @@ body {
     background-color: var(--background-accent);
     color: white;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Limit transitions to color */
     text-align: center;
 }
 
 .navLinks a:hover {
     background-color: white;
-    color:black;
+    color: black;
 }
 
 .navLinks li.active-item a {
-    font-weight:bolder;
+    font-weight: bolder;
     background-color: var(--background-accent);
     color: white;
     text-decoration: underline;
-
 }
 
 .header-container {
     background-color: var(--background-accent);
-    color:white;
+    color: white;
     text-align: center;
     margin: 0 auto;
     padding: 1px;
 }
 
-.header-container img{
-    display: none
+.header-container img {
+    display: none;
 }
 
 .list {
-	display: block;
-	width: 680px;
-	margin: 0 auto;
-	padding: 1rem;
+    display: block;
+    width: 680px;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
 .grid .member-card {
     display: flex;
     flex-direction: column;
     background-color: white;
-    padding: 1.5rem; /* Reduce padding to make the cards smaller */
+    padding: 1.5rem; /* Reduce padding for smaller cards */
     align-items: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for floating effect */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Floating effect */
     border: none; /* Remove borders */
-    border-radius: 8px; /* Optional: Rounded corners for a modern look */
-    margin: 1rem auto; /* Add spacing between cards and center them */
-    max-width: 90%; /* Ensure they don't take up the full width on mobile */
+    border-radius: 8px; /* Rounded corners */
+    margin: 1rem auto;
+    max-width: 90%; /* Limit width on mobile */
     text-align: center;
 }
 
 .member-card img {
-	height: auto;
-	display: block;
-	margin: 0 auto;
-	padding-top: 2rem;
-    max-width: 200px;
     height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-top: 2rem;
+    max-width: 200px;
 }
 
 .list .member-card img {
-	/* remove image from the flow */
-	display: none;
+    display: none; /* Remove image from list view */
 }
 
 .member-card p,
 a {
-	padding-top: 1rem;
+    padding-top: 1rem;
 }
 
 #members.list {
     display: flex;
-    flex-direction: column; 
-    align-items: stretch; 
+    flex-direction: column;
+    align-items: stretch;
     gap: 0.5rem;
     width: 100%;
 }
 
-
 #members.list .member-card {
-    display: grid; 
-    grid-template-columns: repeat(4, 1fr);
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     padding: 1rem;
+    background-color: white;
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-
 #members.list .member-card:nth-child(even) {
-    background-color: lightblue; 
+    background-color: lightblue;
 }
-
 
 #members.list .member-card h3,
 #members.list .member-card p,
 #members.list .member-card a {
-    margin: 0; 
+    margin: 0;
     padding: 0.5rem;
-    text-align: left; 
+    text-align: left;
 }
-
 
 #members.list .member-card a {
     color: var(--background-accent);
     text-decoration: none;
     font-weight: bold;
-    word-break: break-word; 
+    word-break: break-word;
 }
 
 #members.list .member-card a:hover {
     text-decoration: underline;
 }
 
+/* Add responsive behavior for smaller screens */
 
-#members.grid .member-card {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center;
-    background-color: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    padding: 1rem;
-}
-
+/* Footer */
 footer {
     background-color: var(--background-accent);
     text-align: center;

@@ -21,7 +21,7 @@ async function fetchMemberData() {
                 <p>${member.phone}</p>
                 <a href="${member.website}" target="_blank">${member.website}</a>
                 <figure>
-                    <img src="${member.image}" alt="${member.name}" width="200" height="auto">
+                    <img src="${member.image}" alt="${member.name}" width="200px" height="auto" >
                 </figure>
             `;
             membersDiv.appendChild(memberDiv);

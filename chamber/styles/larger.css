@@ -83,4 +83,9 @@
     max-width: 60%;
  }
 
+ #members.list .member-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+ }
+
 }
