@@ -7,10 +7,52 @@
     <meta name="author" content="Parker Morgan">
     <meta property="og:title" content="Rexburg Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:image" content=""
+    <meta property="og:image" content="https://parkermorgan.github.io/wdd231/chamber/images/rexburg-overview.webp">
+    <meta property="og:url" content="https://parkermorgan.github.io/wdd231/chamber/directory.html">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getMember.js" defer></script>
+    <script src="../scripts/dateModified.js" defer></script>
+    <script src="../scripts/hamMenu.js" defer></script>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <title>Rexburg Chamber of Commerce</title>
+    <link rel="icon" href="../favicon.ico">
 </head>
 <body>
-    
+    <header>
+        <div class="header-container">
+            <img src="images/logo.webp" alt="Rexburg Chamber of Commerce Logo" id="logo" width="50" height="50">
+            <h1 id="title">Rexburg Chamber of Commerce</h1>
+        </div>
+    </header>
+    <nav id="navMenu">
+        <button id="menu" aria-label="Toggle navigation">&#9776;</button>
+        <ul class="navLinks">
+            <li><a href="#" title="Home>">Home</a></li>
+            <li class="active-item"><a href="#" title="Directory">Directory</a></li>
+            <li><a href="#" title="Join">Join</a></li>
+            <li><a href="#" title="Discover">Discover</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="buttonToggle">
+            <button id="gridButton">⏹️Grid</button>
+            <button id="listButton">📄List</button>
+        </div>
+        <div id="members">
+        </div>
+    </main>
+    <footer>
+        <p>
+            &copy;
+            <span id="year"></span>
+            | Parker Morgan | Vancouver - Washington
+        </p>
+            <span id="lastModified"></span>
+    </footer>
 </body>
 </html>

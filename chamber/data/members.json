@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Fatcats Rexburg",
+        "address": "475 N. 2nd E. Rexburg, ID 83440",
+        "phone": "(208) 359-2600",
+        "website": "https://www.fatcatsfun.com/",
+        "image": "images/fatcats-logo.webp",
+        "membershipLevel": 1,
+        "description": "Experience ultimate family fun at FatCats! Our entertainment center offers movies, bowling, arcade games, and delicious food—all under one roof."
+    },
+    {
+        "name": "The Cookie Place",
+        "address": "24 West 1st South, Rexburg, ID 83440",
+        "phone": "(208) 970-6543",
+        "website": "https://www.thecookieplace.co/",
+        "image": "images/cookieplace-logo.webp",
+        "membershipLevel": 1,
+        "description": "The Cookie Place offers fresh, gourmet cookies and cookie delivery in Idaho Falls, Rexburg and Pocatello."
+    },
+    {
+        "name": "BarberPop Shop",
+        "address": "175 W 2nd S, Rexburg, ID 83440",
+        "phone": "(208) 419-3359",
+        "website": "https://www.barberpopshop.com/",
+        "image": "images/barberpop-logo.webp",
+        "membershipLevel": 1,
+        "description": "BarberPop Shop is a FULL-SERVICE Gentleman's Escape! Come in and enjoy the awesome atmosphere! We have professional barbers who maintain a very high standard and will be able to meet your needs!"
+    },
+    {
+        "name": "G's Dairy Delights",
+        "address": "600 Handcart Ln, Rexburg, ID 83440",
+        "phone": "(208) 359-5443",
+        "website": "https://www.facebook.com/gsdairydelights/",
+        "image": "images/g's-dairy-logo.webp",
+        "membershipLevel": 1,
+        "description": "Classic ice cream parlor with a patio for creative flavors in waffle cones & other light bites."
+    },
+    {
+        "name": "Paramount 5",
+        "address": "38 S Center St, Rexburg, ID 83440",
+        "phone": "(208) 356-7469",
+        "website": "https://rexburgmovies.com/paramount-5",
+        "image": "images/paramount-logo.webp",
+        "membershipLevel": 1,
+        "description": "Bargain movie theater screening second-run films & offering standard concessions."
+    },
+    {
+        "name": "Rexburg Rapids",
+        "address": "50 W 2nd N, Rexburg, ID 83440",
+        "phone": "(208) 372-2490",
+        "website": "https://www.rexburg.org/o/rapids",
+        "image": "images/rexburg-rapids-logo.webp",
+        "membershipLevel": 1,
+        "description": "Family water park offering kiddie slides, a lazy river, splash pools & concessions."
+    },
+    {
+        "name": "Pick Me Up Drinks",
+        "address": "210 N 2nd East, Rexburg, ID 83440 ",
+        "phone": "(208) 709-9857",
+        "website": "https://www.pickmeupdrinks.com/",
+        "image": "images/pickmeup-logo.webp",
+        "membershipLevel": 1,
+        "description": "Destination since 2016 for custom mixed sodas and other drinks, plus snacks."
+    }
+    
+  ]

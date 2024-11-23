@@ -1,0 +1,105 @@
+:root {
+    --font-family: "Montserrat", sans-serif;
+    --background-color: lightgrey;
+    --background-accent: rgb(0,74,173);
+    --border: 3px solid black;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+#navMenu {
+    background-color: var(--background-accent);
+}
+
+.navLinks {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navLinks.open {
+    display:grid;
+}
+
+.navLinks li {
+    display: inline-block;
+}
+
+.navLinks a {
+    display: block;
+    padding: 10px;
+    background-color: var(--background-accent);
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.navLinks a:hover {
+    background-color: white;
+    color:black;
+}
+
+.navLinks li.active-item a {
+    font-weight:bolder;
+    background-color: var(--background-accent);
+    color: white;
+    text-decoration: underline;
+
+}
+
+.header-container {
+    display: flex; 
+    align-items: center; 
+    background-color: var(--background-accent);
+  }
+  
+
+.header-container img {
+height: 60px; 
+width: auto;
+padding-left: 1em;
+}
+
+.header-container h1 {
+font-size: 2em;
+margin-left: 10px; 
+color:white;
+}
+
+
+.list {
+	display: block;
+	width: 680px;
+	margin: 0 auto;
+	padding: 1rem;
+}
+
+.member-card {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid rgb(0 0 0 /.1);
+	background-color: aliceblue;
+	padding: 1rem;
+}
+
+.member-card img {
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	padding-top: 2rem;
+}
+
+.list .member-card img {
+	/* remove image from the flow */
+	display: none;
+}
+
+
+.member-card p,
+a {
+	padding-top: 1rem;
+}
