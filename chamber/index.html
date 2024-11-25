@@ -8,8 +8,7 @@
     <meta property="og:title" content="Rexburg Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://parkermorgan.github.io/wdd231/chamber/images/rexburg-overview.webp">
-    <meta property="og:url" content="https://parkermorgan.github.io/wdd231/chamber/directory.html">
-    <script src="scripts/navigation.js" defer></script>
+    <meta property="og:url" content="https://parkermorgan.github.io/wdd231/chamber/index.html">
     <script src="scripts/getMember.js" defer></script>
     <script src="../scripts/dateModified.js" defer></script>
     <script src="../scripts/hamMenu.js" defer></script>
@@ -22,29 +21,28 @@
 </head>
 <body>
     <header>
-            <div class="header-container">
-                <img src="images/logo.webp" alt="Rexburg Chamber of Commerce Logo" id="logo" width="50" height="50">
-                <h1>Rexburg Chamber of Commerce</h1>
-            </div>
-        </header>
-        <nav id="navMenu">
-            <div class="menu-container">
-            <button id="menu" aria-label="Toggle navigation"></button>
-            </div>
-            <ul class="navLinks">
-                <li><a href="index.html" title="Home>">Home</a></li>
-                <li class="active-item"><a href="directory.html" title="Directory">Directory</a></li>
-                <li><a href="#" title="Join">Join</a></li>
-                <li><a href="#" title="Discover">Discover</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <img src="images/logo.webp" alt="Rexburg Chamber of Commerce Logo" id="logo" width="50" height="50">
+            <h1>Rexburg Chamber of Commerce</h1>
+        </div>
+    </header>
+    <nav id="navMenu">
+        <div class="menu-container">
+        <button id="menu" aria-label="Toggle navigation"></button>
+        </div>
+        <ul class="navLinks">
+            <li class="index-active"><a href="index.html" title="Home>">Home</a></li>
+            <li><a href="directory.html" title="Directory">Directory</a></li>
+            <li><a href="#" title="Join">Join</a></li>
+            <li><a href="#" title="Discover">Discover</a></li>
+        </ul>
+    </nav>
     <main>
-        <div class="buttonToggle">
-            <button id="gridButton"><img src="images/grid.webp" alt="Grid icon" width="50" height="50" ></button>
-            <button id="listButton"><img src="images/list.webp" alt="List icon" width="50" height="50"></button>
-        </div>
-        <div id="members">
-        </div>
+        <section class="hero">
+            <h1 class="herotext">Rexburg Chamber of Commerce</h1>
+            <button id="call_to_action" href="#">Join us!</button>
+        </section>
+
     </main>
     <footer>
         <p>

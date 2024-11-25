@@ -1,4 +1,24 @@
 @media only screen and (min-width: 56.25em) {
+    .header-container {
+        display: flex; 
+        align-items: center; 
+        background-color: var(--background-accent);
+      }
+      
+    
+    .header-container img {
+    display:flex;
+    height: 60px; 
+    width: auto;
+    padding-left: 1em;
+    }
+    
+    .header-container h1 {
+    font-size: 2em;
+    margin-left: 10px; 
+    color:white;
+    }
+    
     #menu {
         display:none;
     }
@@ -49,25 +69,7 @@
         border-right: var(--border);
     }
 
-    .header-container {
-        display: flex; 
-        align-items: center; 
-        background-color: var(--background-accent);
-      }
-      
     
-    .header-container img {
-    display:flex;
-    height: 60px; 
-    width: auto;
-    padding-left: 1em;
-    }
-    
-    .header-container h1 {
-    font-size: 2em;
-    margin-left: 10px; 
-    color:white;
-    }
     
     #members {
         display:grid;
@@ -79,13 +81,62 @@
         height: auto;
     }
 
- #members.list {
-    max-width: 60%;
- }
+    #members.list {
+        max-width: 60%;
+    }
 
- #members.list .member-card {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
- }
+    #members.list .member-card {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
 
+    .navLinks li.index-active a {
+        font-weight:bolder;
+        background-color: rgb(174,190,217);
+        color: var(--background-accent);
+        border-radius: 10px 10px 0 0;
+        border-top: var(--border);
+        border-left: var(--border);
+        border-right: var(--border);
+    }
+
+    .hero {
+        width: 100%;
+        height: 80vh;
+        background-image: url('../images/rexburg-hero.webp');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+    }
+
+
+    .herotext {
+        color:white;
+        font-size: 3rem;
+        margin-left: 100px;
+        padding-left: 40px;
+        text-decoration: none;
+
+    }
+
+    #call_to_action {
+        position: absolute; /* Absolute positioning for the button */
+        bottom: 100px; /* 20px from the bottom of the hero section */
+        right: 200px; /* 20px from the right of the hero section */
+        background-color: white; /* Example background color for the button */
+        color: var(--background-accent);
+        padding: 10px 20px;
+        font-size: 3.5rem;
+        border-radius: 20px;
+        border: var(--border);
+        text-align: center;
+        text-decoration: none; /* Remove underline if it's a link */
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    
+    #call_to_action:hover {
+        background-color: var(--background-accent); /* Darker color on hover */
+        color: white;
+        transform: scale(1.1);
+    }
 }
