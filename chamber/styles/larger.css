@@ -120,23 +120,37 @@
     }
 
     #call_to_action {
-        position: absolute; /* Absolute positioning for the button */
-        bottom: 100px; /* 20px from the bottom of the hero section */
-        right: 200px; /* 20px from the right of the hero section */
-        background-color: white; /* Example background color for the button */
+        position: absolute; 
+        bottom: 100px; 
+        right: 200px; 
+        background-color: white; 
         color: var(--background-accent);
         padding: 10px 20px;
         font-size: 3.5rem;
         border-radius: 20px;
         border: var(--border);
         text-align: center;
-        text-decoration: none; /* Remove underline if it's a link */
+        text-decoration: none; 
         transition: background-color 0.3s ease, transform 0.2s ease;
     }
     
     #call_to_action:hover {
-        background-color: var(--background-accent); /* Darker color on hover */
+        background-color: var(--background-accent);
         color: white;
         transform: scale(1.1);
+    }
+
+    .info-cards {
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    
+    .info-card {
+        background-color: #f9f9f9; 
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin: 2rem;
     }
 }

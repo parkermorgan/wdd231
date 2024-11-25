@@ -128,7 +128,7 @@ body {
     background-color: white;
     padding: 1.5rem; /* Reduce padding for smaller cards */
     align-items: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Floating effect */
+    box-shadow: var(--shadow); /* Floating effect */
     border: none; /* Remove borders */
     border-radius: 8px; /* Rounded corners */
     margin: 1rem auto;
@@ -240,4 +240,10 @@ footer {
         color: white;
         transform: scale(1.1);
     }
+
+    .info-cards {
+        display:flex;
+        flex-direction: column;
+    }
+
 }

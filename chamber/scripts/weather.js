@@ -11,7 +11,7 @@ function getWeather() {
             const temperature = data.main.temp;
             const weatherDescription = data.weather[0].description;
             const icon = data.weather[0].icon;
-            const iconUrl = `https://openweathermap.org/img/wn/${icon}.png`; // Corrected here
+            const iconUrl = `https://openweathermap.org/img/wn/${icon}.png`;
             const humidity = data.main.humidity;
             const windSpeed = data.wind.speed;
         
