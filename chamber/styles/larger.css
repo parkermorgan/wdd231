@@ -76,8 +76,8 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .member-card {
-        min-width: 400px;
+    #members.grid .member-card {
+        width: 400px;
         height: auto;
     }
 
@@ -88,6 +88,7 @@
     #members.list .member-card {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+
     }
 
     .navLinks li.index-active a {
@@ -165,7 +166,7 @@
         gap: 20px; /* Optional spacing between cards */
     }
     
-    .member-card {
+    #random-members .member-card {
         min-width: 300px; /* Ensure cards have consistent width */
         max-width: 400px; /* Prevent oversized cards */
         height: auto;
