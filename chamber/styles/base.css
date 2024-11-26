@@ -168,7 +168,7 @@ a {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    transform: none;
 }
 
 #members.list .member-card:nth-child(even) {
@@ -215,14 +215,73 @@ footer {
     font-size: 25px;
     text-decoration: none;
     text-align: center;
+    margin: 0 auto;
 
     text-shadow: var(--shadow);
 }
 
+.info-card {
+    text-align: center;
+    text-decoration: none;
+    line-height:2rem;
+    background-color: rgb(218, 214, 206);
+    border-radius: 10px;
+    margin-top: 1rem;
+    box-shadow: var(--shadow);
+}
+
+
+.info-cards {
+    display:flex;
+    flex-direction: column;
+    margin: 1rem;
+    font-size: large;
+}
+
+.events a {
+    text-decoration: none;
+    color:black
+}
+
+
+.events img {
+    width: 400px;
+    height: auto;
+    border: var(--border);
+    border-radius: 10px;
+}
+
+.date {
+    font-weight: bold;
+}
+
+#random-members .member-card {
+    background-color: white;
+    padding: 1.5rem; /* Reduce padding for smaller cards */
+    align-items: center;
+    box-shadow: var(--shadow); /* Floating effect */
+    border: none; /* Remove borders */
+    border-radius: 8px; /* Rounded corners */
+    margin: 1rem auto;
+    max-width: 90%; /* Limit width on mobile */
+    text-align: center;
+    
+}
+
+.member-card {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.member-card:hover {
+    transform: scale(1.1);
+}
+
+
+
 @media only screen and (max-width: 56.25em) {
     #call_to_action {
         position: absolute; 
-        top: 280px;
+        top: 250px;
         right: 25px; 
         background-color: white; 
         color: var(--background-accent);
@@ -241,9 +300,5 @@ footer {
         transform: scale(1.1);
     }
 
-    .info-cards {
-        display:flex;
-        flex-direction: column;
-    }
 
-}
+}   

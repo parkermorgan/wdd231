@@ -146,11 +146,30 @@
         gap: 20px;
     }
     
-    .info-card {
-        background-color: #f9f9f9; 
+    .info-card { 
         padding: 20px;
         border: 1px solid #ddd;
         border-radius: 8px;
         margin: 2rem;
+        line-height: 2rem;
+        transition: background-color 0.3s ease, transform 0.2s ease;
     }
+
+    .info-card:hover {
+        transform: scale(1.1);
+    }
+
+    #random-members {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+        gap: 20px; /* Optional spacing between cards */
+    }
+    
+    .member-card {
+        min-width: 300px; /* Ensure cards have consistent width */
+        max-width: 400px; /* Prevent oversized cards */
+        height: auto;
+        margin: 0 auto; /* Center cards if needed */
+    }
+    
 }
