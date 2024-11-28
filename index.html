@@ -16,75 +16,93 @@
       rel="stylesheet"
     >
     <link rel="stylesheet" href="styles/normalize.css" >
-    <link rel="stylesheet" href="styles/base.css" >
-    <link rel="stylesheet" href="styles/larger.css" >
-    <script src="scripts/hamMenu.js" defer></script>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navButton.js" defer></script>
     <script src="scripts/getcourses.js" defer></script>
     <script src="scripts/dateModified.js" defer></script>
   </head>
+
+
+
+
+
   <body>
     <header>
-      <div id="img-container">
-        <img
-          id="profile"
-          src="images/profile.jpg"
-          alt="Parker Morgan Profile Image"
-          width="100"
-          height="100"
-        >
-      </div>
-      <h1>Parker J. Morgan</h1>
-    </header>
-
-      <div class="menu-container">
-      <button id="menu" aria-label="Toggle navigation"></button>
-      </div>
-      <ul class="navLinks">
-          <li class="index-active"><a href="index.html" title="Home>">Home</a></li>
-          <li><a href="chamber/index.html" title="Chamber">Directory</a></li>
-          <li><a href="#" title="GitHub">GitHub Profile</a></li>
-          <li><a href="#" title="LinkedIn">LinkedIn</a</li>
-      </ul>
-    <main>
-      <section class="info-cards">
-        <section class="info-card">
-          <h2>Course Work</h2>
-        </section>
-        <section class="info-card">
-          <h2>Washington</h2>
-        </section>
-      </section>
-
-
-
-
-
-
-
-
-
-      <section class="certificate">
-        <h2>Web and Computer Programming Certificate</h2>
-        <div class="buttons">
-            <button onclick="filterCourses('all')">All</button>
-            <button onclick="filterCourses('CSE')">CSE</button>
-            <button onclick="filterCourses('WDD')">WDD</button>
+        <div class="header-container">
+          <img class="profile" src="images/profile.webp" alt="Picture of Parker Morgan">
+          <h1 class="name">Parker J. Morgan</h1>
+          <button id="menu" aria-label="Toggle navigation">☰</button>
         </div>
-        <div id="courses"></div>
-      </section>
-    </main>
+      </header>
+    <nav id="navMenu">
+        
+        <ul class="navLinks">
+            <li class="index-active"><a href="index.html" title="Home>">Home</a></li>
+            <li><a href="chamber/index.html" title="Chamber">Chamber</a></li>
+            <li><a href="#" title="GitHub">GitHub Profile</a></li>
+            <li><a href="#" title="LinkedIn">LinkedIn</a></li>
+        </ul>
+    </nav>
 
+
+
+
+    <main>
+        <section class="info-cards">
+            <section class="info-card">
+                <h3>Course Work</h3>
+                <div class="course-work">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                </div>
+            </section>
+
+            <section class="info-card" id="washington">
+                <h3>Vancouver, Washington</h3>
+                <div id="washington-info">
+                    <figure>
+                        <img src="images/vancouver.webp" alt="Aerial photo of Vancouver, Washington" width="400" height="auto">
+                        <figcaption>Mount Hood</figcaption>
+                    </figure>
+                </div>
+            </section>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+        <section class="certificate">
+            <h3>Web and Computer Programming Certificate</h3>
+            <div class="buttons">
+                <button onclick="filterCourses('all')">All</button>
+                <button onclick="filterCourses('CSE')">CSE</button>
+                <button onclick="filterCourses('WDD')">WDD</button>
+            </div>
+            <div id="courses"></div>
+          </section>
+    </main>
     <footer>
-      <p>Total Credits: <span id="total-credits">0</span></p>
-        <p>
-            &copy;
-            <span id="year"></span>
-            | Parker Morgan | Vancouver - Washington
-        </p>
-        <p>
-            Last Modification:
-            <span id="lastModified"></span>
-        </p>
-    </footer>
-  </body>
+        <p>Total Credits: <span id="total-credits">0</span></p>
+          <p>
+              &copy;
+              <span id="year"></span>
+              | Parker Morgan | Vancouver - Washington
+          </p>
+          <p>
+              Last Modification:
+              <span id="lastModified"></span>
+          </p>
+      </footer>
+</body>
 </html>
