@@ -245,7 +245,7 @@ footer {
 
 
 .events img {
-    width: 400px;
+    width: 100%;
     height: auto;
     border: var(--border);
     border-radius: 10px;

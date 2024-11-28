@@ -99,6 +99,7 @@
         border-top: var(--border);
         border-left: var(--border);
         border-right: var(--border);
+        color:black;
     }
 
     .hero {
