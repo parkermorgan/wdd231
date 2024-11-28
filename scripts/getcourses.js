@@ -69,7 +69,7 @@ function displayCourses(courseList) {
     courseList.forEach((course) => {
         const courseDiv = document.createElement("div");
         courseDiv.textContent = course.title;  // Display the course title
-        courseDiv.className = course.completed ? "completed" : "not-completed";
+        courseDiv.className = course.completed ? "completed course-item" : "not-completed course-item"; // Added "course-item" for styling
         coursesContainer.appendChild(courseDiv);
     });
   
