@@ -63,23 +63,38 @@
   #courses {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 1rem;
+    margin-top: rem;
     margin-bottom: 1rem;
+    border-top: 1px solid black;
   }
   .course-item {
   
     text-align: center;
     padding: 2rem;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+  }
+  .course-item:hover{
+    transform: scale(1.1);
   }
   button {
     padding: 20px;
     width: 80%;
     height: auto;
+    transition: transform 0.3s ease;
   }
   .buttons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     align-items: center;
+  }
+  button:hover {
+    transform: scale(1.1);
+  }
+  figure img {
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 }
