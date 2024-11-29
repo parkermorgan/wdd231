@@ -1,24 +1,85 @@
 @media only screen and (min-width: 56.25em) {
 
-.profile {
-  width: 4%;
-}
-.header-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.name { 
-  font-size: 2.7rem;
-  margin-top: 20px;
-}
+  .profile {
+    width: 4%;
+  }
 
-#menu {
-  display: none;
-}
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
-.navLinks {
-  display: flex;
-  flex-direction: row;
-}
+  .name { 
+    font-size: 2.7rem;
+    margin-top: 20px;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .navLinks {
+    display: flex; /* Use flexbox for uniform sizing */
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: stretch; /* Ensure all items are the same height */
+    margin: 0;
+    padding: 0;
+    background-color: #222; /* Background color for the header (optional) */
+  }
+
+  .navLinks li {
+    flex: 1; /* Make all list items the same width */
+    list-style: none; /* Remove bullet points */
+  }
+
+  .navLinks a {
+    display: flex; /* Flexbox inside the <a> for vertical centering */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    height: 100%; /* Stretch to match the height of the header */
+    padding: 1rem 0; /* Add vertical padding for spacing */
+    text-decoration: none; /* Remove underline from links */
+    text-align: center;
+    color: white; /* Set text color */
+  
+  }
+
+  .navLinks a:hover {
+    background-color: grey; /* Entire box changes color on hover */
+  }
+  .info-cards {
+    display: flex;
+    flex-direction: row;
+  }
+  .info-card{
+    width: 100%;
+  }
+  .course-work li {
+  line-height: 50px;
+  margin: 10px;
+  }
+  #courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .course-item {
+  
+    text-align: center;
+    padding: 2rem;
+  }
+  button {
+    padding: 20px;
+    width: 80%;
+    height: auto;
+  }
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
 }

@@ -75,7 +75,16 @@ body {
   text-decoration: none;
 }
 
-/* Hide navigation links by default (for mobile menu) */
+.navLinks a.active {
+  color: tan;
+  font-weight: bold; /* Optional: emphasize active link */
+}
+
+.navLinks a.active:hover{
+  color:white;
+}
+/* Hide
+navigation links by default (for mobile menu) */
 .navLinks {
   display: none;
 }
@@ -172,7 +181,7 @@ figure img{
 }
 
 .completed {
-  background-color: var(--background-accent); /* Optional: Green for completed courses */
+  background-color:#222; /* Optional: Green for completed courses */
   color: white;
 }
 
