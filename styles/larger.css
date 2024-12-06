@@ -97,4 +97,22 @@
     margin-top: 20px;
     margin-bottom: 10px;
   }
+
+  dialog {
+    position: fixed; /* Ensure it stays in place relative to the screen */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure it appears above other content */
+    line-height: 2rem;
+  }
+
+  dialog button {
+    width: 10%;
+  }
 }

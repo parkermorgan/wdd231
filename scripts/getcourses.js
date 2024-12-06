@@ -61,35 +61,59 @@ const courses = [
     }
 ];
 
-function displayCourses(courseList) {
+function displayCourseDetails(course) {
+    const courseDetails = document.getElementById('courseDetails'); // Assuming modal element with id 'courseDetails'
+    courseDetails.innerHTML = ''; // Clear previous content
+    courseDetails.innerHTML = `
+      <button id="closeModal">❌</button>
+      <h2>${course.subject} ${course.number}</h2>
+      <h3>${course.title}</h3>
+      <p><strong>Credits</strong>: ${course.credits}</p>
+      <p><strong>Certificate</strong>: ${course.certificate}</p>
+      <p>${course.description}</p>
+      <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal(); // Open modal dialog
+    
+    const closeModal = document.getElementById("closeModal");
+    closeModal.addEventListener("click", () => {
+      courseDetails.close(); // Close modal dialog
+    });
+  }
+  
+  function displayCourses(courseList) {
     const coursesContainer = document.getElementById("courses");
-    coursesContainer.innerHTML = "";
+    coursesContainer.innerHTML = ""; // Clear previous courses
     
     // Add courses to the container
     courseList.forEach((course) => {
-        const courseDiv = document.createElement("div");
-        courseDiv.textContent = course.title;  // Display the course title
-        courseDiv.className = course.completed ? "completed course-item" : "not-completed course-item"; // Added "course-item" for styling
-        coursesContainer.appendChild(courseDiv);
+      const courseDiv = document.createElement("div");
+      courseDiv.textContent = course.title; // Display the course title
+      courseDiv.className = course.completed ? "completed course-item" : "not-completed course-item"; // Styling classes
+  
+      // Add click event to display course details in modal
+      courseDiv.addEventListener("click", () => displayCourseDetails(course));
+  
+      coursesContainer.appendChild(courseDiv);
     });
   
     // Update total credits after displaying the courses
     updateTotalCredits(courseList);
-}
-
-function filterCourses(subject) {
+  }
+  
+  function filterCourses(subject) {
     let filteredCourses = courses;
     if (subject !== "all") {
-        filteredCourses = courses.filter((course) => course.subject === subject);
+      filteredCourses = courses.filter((course) => course.subject === subject);
     }
-    displayCourses(filteredCourses);  // Display filtered courses
-}
-
-function updateTotalCredits(courseList) {
+    displayCourses(filteredCourses); // Display filtered courses
+  }
+  
+  function updateTotalCredits(courseList) {
     const totalCredits = courseList.reduce((total, course) => total + course.credits, 0);
     const totalCreditsElement = document.getElementById('total-credits');
     totalCreditsElement.textContent = totalCredits;
-}
-
-// Call the displayCourses function initially to display all courses
-displayCourses(courses);
+  }
+  
+  // Call the displayCourses function initially to display all courses
+  displayCourses(courses);
