@@ -3,9 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Chamber join page">
+    <meta name="author" content="Parker Morgan">
+    <title>Chamber Join Page</title>
 </head>
 <body>
-    
+    <header>
+        <div class="header-container">
+            <img src="images/logo.webp" alt="Rexburg Chamber of Commerce Logo" id="logo" width="50" height="50">
+            <h1>Rexburg Chamber of Commerce</h1>
+        </div>
+    </header>
+    <nav id="navMenu">
+        <div class="menu-container">
+        <button id="menu" aria-label="Toggle navigation"></button>
+        </div>
+        <ul class="navLinks">
+            <li class="index-active"><a href="index.html" title="Home>">Home</a></li>
+            <li><a href="directory.html" title="Directory">Directory</a></li>
+            <li><a href="join.html" title="Join">Join</a></li>
+            <li><a href="#" title="Discover">Discover</a></li>
+        </ul>
+    </nav>
+    <main id="join-main">
+            <form method="get" action="thankyou.html" class="aform">
+                <h2 id="form-heading">Membership Application</h2>
+                <fieldset>
+                    <label>First Name:
+                        <input type="text" id="first-name" title="Enter your first name" aria-label="Enter your first name"
+                        autocomplete="given-name" required>
+                    </label>
+
+                    <label>Last Name:
+                        <input type="text" id="last-name" title="Enter your last name" aria-label="Enter your last name"
+                        autocomplete="family-name" required>
+                    </label>
+
+                    <label>Organizational Title:
+                        <input type="text" id="org-title" name="org-title" title="Enter your organizational title (alpha characters, hyphens, and spaces only, minimum 7 characters)"
+                        aria-label="Enter your organizational title (alpha characters, hyphens, and spaces only, minimum 7 characters)"
+                        autocomplete="organization-title" pattern="[A-Za-z/s/-]{7,}">
+                    </label>
+
+                    <label>Email Address:
+                        <input type="email" id="email" name="email" title="Enter a valid email address" aria-label="Enter a valid email address"
+                            autocomplete="email" placeholder="example@example.com" required>
+                    </label>
+
+                    <label>Mobile Phone:
+                        <input type="tel" id="phone" name="phone" title="Enter your mobile phone number" aria-label="Enter your mobile phone number"
+                            autocomplete="tel" required>
+                    </label>
+
+                    <label>Business/Organization Name:
+                        <input type="text" id="org-name" name="org-name" title="Enter your business/organization's name" aria-label="Enter your business/organization's name"
+                            autocomplete="organization" required>
+                    </label>
+
+                    <label>Membership Level:
+                        <select id="membership" name="membership" aria-label="Select membership level" required>
+                            <option value="" aria-label="select product" selected disabled>Select a membership... &#9662;</option>
+                            <option value="Non-Profit">Non Profit Membership</option>
+                            <option value="Bronze">Bronze Membership</option>
+                            <option value="Silver">Silver Membership</option>
+                            <option value="Gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label>Business/Organization Description: <br>
+                        <textarea id="description" name="description" rows="4" cols="50"
+                            title="Give a description of your business or organization" aria-label="Give a description of your business or organization"></textarea>
+                        </textarea>
+                    </label>
+
+                    <input type="hidden" id="timestamp" name="timestamp" value="">
+
+                    <input type="submit" id="submit-button" value="Apply for Membership" aria-label="Apply for Membership">
+                </fieldset>
+            </form>
+    </main>
+    <footer>
+        <p>
+            &copy;
+            <span id="year"></span>
+            | Parker Morgan | Vancouver - Washington
+        </p>
+            <span id="lastModified"></span>
+    </footer>
 </body>
 </html>
