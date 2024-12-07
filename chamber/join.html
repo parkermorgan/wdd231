@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Chamber join page">
     <meta name="author" content="Parker Morgan">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="../scripts/dateModified.js" defer></script>
+    <script src="../scripts/hamMenu.js" defer></script>
     <title>Chamber Join Page</title>
 </head>
 <body>
@@ -19,9 +25,9 @@
         <button id="menu" aria-label="Toggle navigation"></button>
         </div>
         <ul class="navLinks">
-            <li class="index-active"><a href="index.html" title="Home>">Home</a></li>
+            <li ><a href="index.html" title="Home>">Home</a></li>
             <li><a href="directory.html" title="Directory">Directory</a></li>
-            <li><a href="join.html" title="Join">Join</a></li>
+            <li class="active-item"><a href="join.html" title="Join">Join</a></li>
             <li><a href="#" title="Discover">Discover</a></li>
         </ul>
     </nav>
@@ -81,6 +87,28 @@
                     <input type="submit" id="submit-button" value="Apply for Membership" aria-label="Apply for Membership">
                 </fieldset>
             </form>
+            <div class="membership-cards">
+                <section class="membership-card">
+                    <h2>Non Profit Membership</h2>
+                    <button id="np-button">Learn More</button>
+                </section>
+
+                <section class="membership-card">
+                    <h2>Bronze Membership</h2>
+                    <button id="bronze-button">Learn More</button>
+                </section>
+
+                <section class="membership-card">
+                    <h2>Silver Membership</h2>
+                    <button id="silver-button">Learn More</button>
+                </section>
+
+                <section class="membership-card">
+                    <h2>Gold Membership</h2>
+                    <button id="gold-button">Learn More</button>
+                </section>
+                <dialog id="membership-info"></dialog>
+            </div>
     </main>
     <footer>
         <p>

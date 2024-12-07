@@ -173,5 +173,11 @@
         height: auto;
         margin: 0 auto; /* Center cards if needed */
     }
+
+    #join-main {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
     
 }
