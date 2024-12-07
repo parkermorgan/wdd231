@@ -174,10 +174,42 @@
         margin: 0 auto; /* Center cards if needed */
     }
 
-    #join-main {
-        display:grid;
-        grid-template-columns: repeat(2, 1fr);
+    legend {
+        font-size: 1.75em;
     }
+
+    fieldset {
+        width: 100%;
+        min-width: 320px;
+        margin: auto;
+    }
+
+    #join-main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 1em;
+    }
+
+    dialog {
+        position: fixed; /* Ensure it stays in place relative to the screen */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Center horizontally and vertically */
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        z-index: 1000; /* Ensure it appears above other content */
+        line-height: 5rem;
+        height: 50%;
+        
+      
+      }
     
-    
+      dialog button {
+        width: 10%;
+      }
+
 }

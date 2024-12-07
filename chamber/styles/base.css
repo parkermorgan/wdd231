@@ -276,6 +276,116 @@ footer {
     transform: scale(1.1);
 }
 
+fieldset {
+    margin: 2em 0;
+    padding: 1em 2em;
+    border: solid 1px #ccc;
+    border-radius: 6px;
+    min-width: 200px;
+}
+
+legend {
+    font-size: 1.25em;
+    padding: 0 .25em;
+    color: #999;
+}
+
+label {
+    display: block;
+    margin-top: 1em;
+}
+
+label:first-of-type {
+    margin-top: 0;
+}
+
+input {
+    padding: .5em;
+    border: solid 1px #999;
+}
+
+input[type="email"], input[type="text"]{
+    width: 15em;
+}
+
+textarea {
+    min-height: 8em;
+    min-width: 100%;
+    padding: .5em;
+    border: solid 1px #999;
+}
+
+input[type="submit"] {
+    padding: .5em 1em;
+    border-radius: 6px;
+    background-color: #333;
+    color: #fff;
+    font-size: .8em;
+}
+
+.membership-cards {
+    display:flex;
+    flex-direction: column;
+    margin: 1rem;
+    font-size: large;
+    text-align: center;
+}
+
+.membership-card {
+    text-align: center;
+    text-decoration: none;
+    line-height:2rem;
+    background-color: rgb(218, 214, 206);
+    border-radius: 10px;
+    margin-top: 1rem;
+    box-shadow: var(--shadow);
+    padding: 1em;
+    height: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#membership-button {
+    margin-top: 2em;
+}
+
+dialog {
+    border: var(--border);
+    border-radius: .25rem;
+    padding: 1rem;
+    box-shadow: var(--shadow);
+    width: 90%;
+    max-width: 600px;
+    margin: 20px;
+    text-align: left;
+  }
+
+  .membership-card:hover {
+    transform: scale(1.1);
+  }
+  
+  ::backdrop {
+    background-color: rgba(170, 170, 170, 0.664);
+  }
+  
+  dialog button {
+    position: absolute;
+    top: 26px;
+    right: 26px;
+    padding: .5rem 1rem;
+    border: var(--border);
+  }
+  
+  dialog button:hover{
+    transform: none;
+  }
+  
+  dialog h2 {
+    color: White;
+    background-color: var(--background-accent);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+  }
 
 @media only screen and (max-width: 56.25em) {
     #call_to_action {
@@ -299,5 +409,5 @@ footer {
         transform: scale(1.1);
     }
 
-
+    
 }   
