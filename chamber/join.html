@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chamber join page">
+    <meta name="description" content="Rexburg Chamber of Commerce Membership Application Page">
     <meta name="author" content="Parker Morgan">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <meta property="og:title" content="Rexburg Chamber of Commerce Join Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://parkermorgan.github.io/wdd231/chamber/images/rexburg-overview.webp">
+    <meta property="og:url" content="https://parkermorgan.github.io/wdd231/chamber/join.html">
     <script src="../scripts/dateModified.js" defer></script>
     <script src="../scripts/hamMenu.js" defer></script>
     <script src="scripts/form.js" defer></script>
     <title>Chamber Join Page</title>
+    <link rel="icon" href="../favicon.ico">
 </head>
 <body>
     <header>
@@ -73,7 +78,6 @@
                     <label>Business/Organization Description: <br></label>
                         <textarea id="description" name="description" rows="4" cols="50"
                             title="Give a description of your business or organization" aria-label="Give a description of your business or organization"></textarea>
-                        </textarea>
 
                     <input type="hidden" id="timestamp" name="timestamp" value="">
 
@@ -81,7 +85,7 @@
                 </fieldset>
             </form>
             <div class="membership-cards">
-                <legend>Membership Levels</legend>
+                <h2>Membership Levels</h2>
                 <section class="membership-card" style="animation-delay: 0s;">
                     <h2>Non-Profit Membership</h2>
                     <button class="membership-button">Learn More</button>
