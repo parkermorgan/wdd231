@@ -1,4 +1,13 @@
-
+@keyframes spinIn {
+    0% {
+        transform: rotateY(90deg) scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: rotateY(0deg) scale(1);
+        opacity: 1;
+    }
+}
 
 :root {
     --font-family: "Montserrat", sans-serif;
@@ -342,6 +351,8 @@ input[type="submit"] {
     padding: 1em;
     height: 100%;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    animation: spinIn 1s ease-in-out;
+
 }
 
 #membership-button {
@@ -387,6 +398,27 @@ dialog {
     border-radius: 5px;
   }
 
+  #thankyou-main {
+    margin: 1rem;
+  }
+  
+  #thankyou-main h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  #thankyou-main h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  #submission-details {
+    line-height: 2rem;
+    background-color: #cac9c9;
+    border: var(--border);
+    padding: 1rem;
+    border-radius: 5px;
+  }
 @media only screen and (max-width: 56.25em) {
     #call_to_action {
         position: absolute; 
@@ -409,5 +441,7 @@ dialog {
         transform: scale(1.1);
     }
 
+    
+ 
     
 }   

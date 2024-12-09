@@ -17,7 +17,7 @@
     <header>
         <div class="header-container">
             <img src="images/logo.webp" alt="Rexburg Chamber of Commerce Logo" id="logo" width="50" height="50">
-            <h1>Rexburg Chamber of Commerce</h1>
+            <h1>Thank You!</h1>
         </div>
     </header>
     <nav id="navMenu">
@@ -31,7 +31,11 @@
             <li><a href="#" title="Discover">Discover</a></li>
         </ul>
     </nav>
-    
+        <main id="thankyou-main">
+            <h2>Thank You for Your Submission!</h2>
+            <h3>Here is the information you provided:</h3>
+            <div id="submission-details"></div>
+        </main>
     <footer>
         <p>
             &copy;
@@ -40,5 +44,18 @@
         </p>
             <span id="lastModified"></span>
     </footer>
+
+    <script>
+        const queryParams = new URLSearchParams(window.location.search);
+        const detailsContainer = document.getElementById('submission-details');
+
+        queryParams.forEach((value, key) => {
+            const p = document.createElement('p');
+            p.textContent = `${key.replace(/-/g, ' ')}: ${value}`;
+            detailsContainer.appendChild(p);
+        });
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
