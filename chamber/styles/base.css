@@ -421,7 +421,7 @@ dialog {
   }
 
   .membership-card {
-    animation-name: spinIn 1s ease-in-out; 
+    animation-name: spinIn 1s ease-in-out;
     animation-duration: 1s;
     animation-fill-mode: both;  
     }
