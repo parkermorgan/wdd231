@@ -1,0 +1,74 @@
+:root {
+    --background-color: rgb(9, 33, 9);
+    --background-accent: lightgrey;
+    --section-color: rgb(160, 152, 128);
+    --font-family: "Montserrat", sans-serif;
+    --border: 3px solid black;
+    --shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-accent);
+  }
+header {
+    background-color: var(--background-color);
+    padding: .8rem;
+    color:white;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+}
+
+#colors {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+#scenarios ul {
+    text-align: left;
+}
+
+.color1 {
+    background-color: var(--background-color);
+    color:white;
+    padding:5px;
+    border: 2px solid black;
+}
+
+.color2 {
+    background-color: var(--section-color);
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.color3 {
+    background-color: var(--background-accent);
+    padding: 5px;
+    border: 2px solid black;
+}
+
+section img {
+    width: 90%;
+}
+
+section {
+    background-color: var(--section-color);
+    margin-bottom: 1rem;
+    padding:5px;
+    border: var(--border);
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--background-color);
+    padding: 1rem;
+    color:white;
+    margin: 0 auto;
+}
