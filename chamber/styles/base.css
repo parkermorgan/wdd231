@@ -309,9 +309,10 @@ input[type="email"], input[type="text"]{
 
 textarea {
     min-height: 8em;
-    min-width: 100%;
+    width: 80%;
     padding: .5em;
     border: solid 1px #999;
+    
 }
 
 input[type="submit"] {

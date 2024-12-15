@@ -30,7 +30,6 @@
         justify-content: flex-start; /* Align links to the left */
         align-items: center; /* Vertical alignment for nav links */
         width: 100%; /* Make the nav section span the full width */
-        padding: 0 20px; /* Optional: Add padding for spacing */
         margin: 0; /* Remove default margins */
         list-style: none;
         background-color: var(--background-color); /* Set a background color for the full-width effect */
@@ -78,5 +77,32 @@
 
     .familyphoto {
         content: url("/memories/images/morganFamily.webp");
+    }
+
+    #individuals {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #submission-details {
+        min-width: 800px;
+        line-height: 4rem;
+        font-size: larger;
+    }
+
+     legend {
+        font-size: 1.75em;
+    }
+
+    fieldset {
+        width: 100%;
+        min-width: 320px;
+        margin: auto;
+    }
+
+    textarea {
+        max-width: 100px;
     }
 }

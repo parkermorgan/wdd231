@@ -1,0 +1,151 @@
+[
+    {
+      "name": "David Morgan",
+      "spouse": "Kristyn Morgan",
+      "dob": "07/05/1969",
+      "gender": "m",
+      "numberOfKids": "6",
+      "kidsNames": ["Jordan Dennis Morgan", "Carter David Morgan", "Mckay Curtis Morgan", "Davis Michael Morgan", "Parker Justin Morgan", "Kennedy Morgan"],
+      "image": "images/individual/dave.webp",
+      "ageGroup": "adult"
+    },
+    {
+      "name": "Kristyn Morgan",
+      "spouse": "David Morgan",
+      "dob": "06/14/1972",
+      "gender": "f",
+      "numberOfKids": "6",
+      "kidsNames": ["Jordan Dennis Morgan", "Carter David Morgan", "Mckay Curtis Morgan", "Davis Michael Morgan", "Parker Justin Morgan", "Kennedy Morgan"],
+      "image": "images/daveandkristyn.webp",
+      "ageGroup": "adult"
+    },
+    {
+      "name": "Jordan Morgan",
+      "spouse": "Contessa Morgan",
+      "dob": "01/29/1993",
+      "gender": "m",
+      "numberOfKids": "2",
+      "kidsNames": ["Eleanor Rigby Morgan", "Penny Louise Morgan"],
+      "image": "images/jordanandtessa.webp",
+      "ageGroup": "kid"
+    },
+    {
+      "name": "Contessa Neff Morgan",
+      "spouse": "Jordan Morgan",
+      "dob": "08/25/1993",
+      "gender": "f",
+      "numberOfKids": "2",
+      "kidsNames": ["Eleanor Rigby Morgan", "Penny Louise Morgan"],
+      "image": "images/individual/tessa.webp",
+      "ageGroup": "kid"
+    },
+    {
+      "name": "Carter Morgan",
+      "spouse": "Lydia Morgan",
+      "dob": "11/02/1994",
+      "gender": "m",
+      "numberOfKids": "2",
+      "kidsNames": ["Thaddeus Glenn Morgan", "Peter Davis Morgan"],
+      "ageGroup": "kid",
+      "image": "images/individual/carter.webp"
+    },
+    {
+      "name": "Lydia Downer Morgan",
+      "spouse": "Carter Morgan",
+      "dob": "01/04/1994",
+      "gender": "f",
+      "numberOfKids": "2",
+      "kidsNames": ["Thaddeus Glenn Morgan", "Peter Davis Morgan"],
+      "image": "images/individual/lydia.webp",
+      "ageGroup": "kid"
+    },
+    {
+      "name": "McKay Morgan",
+      "dob": "02/06/1997",
+      "gender": "m",
+      "ageGroup": "kid",
+      "image": "images/mckay.webp"
+    },
+    {
+      "name": "Davis Morgan",
+      "spouse": "Cassidy Morgan",
+      "dob": "04/18/1999",
+      "gender": "m",
+      "image": "images/individual/davis.webp",
+      "ageGroup": "kid"
+    },
+    {
+      "name": "Cassidy Ogden Morgan",
+      "spouse": "Davis Morgan",
+      "dob": "02/17/1998",
+      "gender":"f",
+      "image": "images/individual/cassie.webp",
+      "ageGroup": "kid"
+    },
+    {
+      "name": "Parker Morgan",
+      "spouse": "Shelby Wright Morgan",
+      "dob": "07/13/2001",
+      "gender": "m",
+      "ageGroup": "kid",
+      "image": "images/individual/parker.webp"
+    },
+    {
+      "name": "Shelby Wright Morgan",
+      "spouse": "Parker Morgan",
+      "dob": "07/29/1997",
+      "gender":"f",
+      "ageGroup": "kid",
+      "image": "images/individual/shelby.webp"
+    },
+    {
+      "name": "Kennedy Morgan",
+      "dob": "04/06/2003",
+      "gender":"f",
+      "ageGroup": "kid",
+      "image": "images/kennedy.webp"
+    },
+    {
+      "name": "David Carter Morgan",
+      "dob": "09/10/2017",
+      "gender":"m",
+      "ageGroup": "grandkid",
+      "image": "images/individual/david.webp"
+    },
+    {
+      "name": "Thaddeus Glenn Morgan",
+      "dob": "05/06/2020",
+      "gender":"m",
+      "ageGroup": "grandkid",
+      "image": "images/individual/teddy.webp"
+    },
+    {
+      "name": "Peter Davis Morgan",
+      "dob": "11/21/2021",
+      "gender":"m",
+      "ageGroup": "grandkid",
+      "image": "images/individual/peter.webp"
+    },
+    {
+      "name": "Thomas Robert Morgan",
+      "dob": "11/16/2023",
+      "gender":"m",
+      "ageGroup": "grandkid",
+      "image": "images/individual/thomas.webp"
+    },
+    {
+      "name": "Eleanor Rigby Morgan",
+      "dob": "07/31/19",
+      "gender":"f",
+      "ageGroup": "grandkid",
+      "image": "images/individual/rigby.webp"
+    },
+    {
+      "name": "Penny Louise Morgan",
+      "dob": "03/01/2023",
+      "gender":"f",
+      "ageGroup": "grandkid",
+      "image": "images/individual/penny.webp"
+    }
+  ]
+  

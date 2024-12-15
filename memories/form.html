@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the feedback form for the Morgan Family digital scrapbook.">
+    <meta name="author" content="Parker Morgan">
+    <meta property="og:title" content="Morgan Memories Feedback Form">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://parkermorgan.github.io/wdd231/memories/images/form.html">
+    <meta property="og:url" content="https://parkermorgan.github.io/wdd231/memories/index.html">
+    <script src="scripts/dateModified.js" defer></script>
+    <script src="scripts/hamButton.js" defer></script>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Morgan Memories: Feedback Form</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img class="logo" src="images/favicon-32x32.webp" alt="Picture of Evergreen Tree">
+            <h1 class="title">Morgan Memories - Give Us Feedback</h1>
+            <button id="menu" aria-label="Toggle navigation"></button>
+        </div>
+    </header>
+    <nav id="navMenu">
+        <ul class="navLinks">
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="familyinfo.html" title="Family Information">All Family Members</a></li>
+            <li class="activeitem"><a href="form.html" title="Feedback Form">Give Us Feedback</a></li>
+        </ul>
+    </nav>
+    <main id="join-main">
+        <form method="get" action="thankyou.html" class="aform">
+            <fieldset>
+                <legend>Morgan Memories Feedback Form</legend>
+                <label>First Name:</label>
+                    <input type="text" id="first-name" title="Enter your first name" aria-label="Enter your first name"
+                    autocomplete="given-name" required>
+
+                <label>Last Name:</label>
+                    <input type="text" id="last-name" title="Enter your last name" aria-label="Enter your last name"
+                    autocomplete="family-name" required>
+
+                <label>Email Address:</label>
+                    <input type="email" id="email" name="email" title="Enter a valid email address" aria-label="Enter a valid email address"
+                        autocomplete="email" placeholder="example@example.com" required>
+
+                <label>Mobile Phone:</label>
+                    <input type="tel" id="phone" name="phone" title="Enter your mobile phone number" aria-label="Enter your mobile phone number"
+                        autocomplete="tel" required>               
+
+                <label>What page are you giving feedback for?</label>
+                    <select id="pages" name="pages" aria-label="page for feedback" required>
+                        <option value="" aria-label="select page" selected disabled>Select a page... &#9662;</option>
+                        <option value="home">Home</option>
+                        <option value="individual">All Family Members</option>
+                        <option value="form">Give Us Feedback</option>
+                        <option value="general">General Feedback</option>
+                    </select>
+
+                <label>Enter your feedback here: <br></label>
+                    <textarea id="description" name="description" rows="4" cols="50"
+                        title="Enter your feedback here" aria-label="Enter your feedback here"></textarea>
+
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+
+                <input type="submit" id="submit-button" value="Send Feedback" aria-label="Send Feedback">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>
+            &copy;
+            <span id="year"></span>
+            | Parker Morgan | Vancouver - Washington
+        </p>
+            <span id="lastModified"></span>
+    </footer>
+
+    <script>
+        document.getElementById('timestamp').value = new Date().toISOString();
+    </script>
+</body>
+</html>

@@ -139,6 +139,22 @@ header {
     transition: transform 0.3s ease; /* Make transform transitions smooth */
 }
 
+.individual-card {
+    background-color: var(--section-color);
+    margin: 20px;
+    border: var(--border);
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: .5;
+    box-shadow: var(--shadow);
+}
+
+.individual-card:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.03);
+}
+
 .member-card:hover {
     box-shadow: var(--shadow);
     scale:1.03;
@@ -174,6 +190,13 @@ header {
     box-shadow: var(--shadow);
 }
 
+.individual-card img {
+    width: 70%;
+    height: auto;
+    margin-top: 30px;
+    box-shadow: var(--shadow);
+}
+
 #memberDetails {
     text-align: left;
     font-size: 1.5rem;
@@ -191,5 +214,89 @@ footer {
     text-align: center;
     padding: 1rem;
     font-size: 1.3rem;
+  }
+
+  fieldset {
+    margin: 2em 0;
+    padding: 1em 2em;
+    border: solid 1px #615f5f;
+    border-radius: 6px;
+    min-width: 200px;
+}
+
+legend {
+    font-size: 1.25em;
+    padding: 0 .25em;
+    color: #615f5f;
+}
+
+label {
+    display: block;
+    margin-top: 1em;
+}
+
+label:first-of-type {
+    margin-top: 0;
+}
+
+input {
+    padding: .5em;
+    border: solid 1px #999;
+}
+
+input[type="email"], input[type="text"]{
+    width: 15em;
+}
+
+#description {
+    min-height: 8em;
+    min-width: 100%;
+    padding: .5em;
+    border: solid 1px #999;
+}
+
+input[type="submit"] {
+    padding: .5em 1em;
+    border-radius: 6px;
+    background-color: #333;
+    color: #fff;
+    font-size: .8em;
+}
+
+#thankyou-main {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 65vh;
+  }
+  
+  #thankyou-main h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+
+  #thankyou-main h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+  }
+
+  #submission-details {
+    line-height: 2rem;
+    background-color: #cac9c9;
+    border: var(--border);
+    padding: 1rem;
+    border-radius: 5px;
+    width: 50%;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  form {
+    align-items: center;
+    text-align: left;
+    width: 100%;
   }
 
