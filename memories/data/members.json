@@ -5,7 +5,7 @@
       "state": "Utah",
       "numberOfKids": "6",
       "kidsNames": ["Jordan Dennis Morgan", "Carter David Morgan", "Mckay Curtis Morgan", "Davis Michael Morgan", "Parker Justin Morgan", "Kennedy Morgan"],
-      "description": "",
+      "description": "Dave is a practicing forensic psychologist, and Kristyn is an online influencer. They enjoy spending time with their grandkids and attending BYU sports events.",
       "image": "images/daveandkristyn.webp"
     },
     {
@@ -14,8 +14,9 @@
       "state": "Utah",
       "numberOfKids": "2",
       "kidsNames": ["Eleanor Rigby Morgan", "Penny Louise Morgan"],
-      "description": "",
-      "image": "images/jordanandtessa.webp"
+      "description": "Jordan is a Security Engineer at Shopify, and Contessa is a stay-at-home mom.",
+      "image": "images/jordanandtessa.webp",
+      "ageGroup": "oldest"
     },
     {
       "name": "Carter and Lydia Morgan",
@@ -23,36 +24,41 @@
       "state": "Utah",
       "numberOfKids": "4",
       "kidsNames": ["David Carter Morgan", "Thaddeus Glenn Morgan", "Peter Davis Morgan", "Thomas Robert Morgan"],
-      "description": "",
-      "image": "images/carterandlydia.webp"
+      "description": "Carter is a SoftWare Engineer at Shopify, and Lydia is an accountant, but spends lots of her time taking care of their four boys.",
+      "image": "images/carterandlydia.webp",
+      "ageGroup": "oldest"
     },
     {
       "name": "Mckay Morgan",
       "town": "Louisville",
       "state": "Kentucky",
-      "description": "",
-      "image": "images/mckay.webp"
+      "description": "Mckay is currently studying at the University of Louisville in counseling psychology, and works in a hospital clinic. He misses Harambe.",
+      "image": "images/mckay.webp",
+      "ageGroup": "oldest"
     },
     {
       "name": "Davis and Cassidy Morgan",
       "town": "Long Beach",
       "state": "Washington",
-      "description": "",
-      "image": "images/davisandcass.webp"
+      "description": "Davis is currently studying at Western Governer's University in marketing, and works as a youth mentor. Cassidy is working as a Pharmacy Tech. They have birbs.",
+      "image": "images/davisandcass.webp",
+      "ageGroup": "youngest"
     },
     {
       "name": "Parker and Shelby Morgan",
       "town": "Rexburg",
       "state": "Idaho",
-      "description": "",
-      "image": "images/parkerandshelby.webp"
+      "description": "Parker is currently studying Software Engineering at BYU-Idaho and is a Team Lead at the Factuly Technology Center, and Shelby is a Paralegal at a law firm in Rexburg. Shelby enjoys embroidering, and Parker enjoys working on his web design projects.",
+      "image": "images/parkerandshelby.webp",
+      "ageGroup": "youngest"
     },
     {
       "name": "Kennedy Morgan",
       "town": "Provo",
       "state": "Utah",
-      "description": "",
-      "image": "images/kennedy.webp"
+      "description": "Kennedy is currently studying at BYU in Provo, and just recently returned home from her mission in Las Vegas, Nevada.",
+      "image": "images/kennedy.webp",
+      "ageGroup": "youngest"
     }
   ]
   

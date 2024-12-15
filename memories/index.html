@@ -9,9 +9,66 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://parkermorgan.github.io/wdd231/memories/images/morganFamily.webp">
     <meta property="og:url" content="https://parkermorgan.github.io/wdd231/memories/index.html">
+    <script src="scripts/dateModified.js" defer></script>
+    <script src="scripts/hamButton.js" defer></script>
+    <script src="scripts/getFamily.js" defer></script>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
     <title>Morgan Memories: A Digital Scrapbook</title>
 </head>
 <body>
-    
+    <header>
+        <div class="header-container">
+            <img class="logo" src="images/favicon-32x32.webp" alt="Picture of Evergreen Tree">
+            <h1 class="title">Morgan Memories - Digital Scrapbook</h1>
+            <button id="menu" aria-label="Toggle navigation"></button>
+        </div>
+    </header>
+    <nav id="navMenu">
+        <ul class="navLinks">
+            <li class="activeitem"><a href="index.html" title="Home">Home</a></li>
+            <li><a href="familyinfo.html" title="Family Information">Family Information</a></li>
+            <li><a href="form.html" title="Feedback Form">Give Feedback</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="main-container">
+            <section class="family-photo">
+                <figure>
+                    <img src="images/morganFamily.webp" alt="Photo of Dave and Kristyn Morgan Family">
+                    <figcaption>Dave and Kristyn Morgan Family</figcaption>
+                </figure>
+            </section>
+            <section class="family-buttons">
+                <div class="buttontext">
+                    <h1 class="familyheader">Family Members -- Click to learn more</h1>
+                    
+                    <div class="buttons">
+                        <button onclick="filterFamily('all')">All</button>
+                        <button onclick="filterFamily('kids')">Parents</button>
+                        <button onclick="filterFamily('oldest')">Oldest</button>
+                        <button onclick="filterFamily('youngest')">Youngest</button>
+                    </div>
+                    <hr>
+                </div>
+                <div id="members"></div>
+                <dialog id="memberDetails"></dialog>
+            </section>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <p>
+            &copy;
+            <span id="year"></span>
+            | Parker Morgan | Vancouver - Washington
+        </p>
+            <span id="lastModified"></span>
+    </footer>
 </body>
 </html>
