@@ -216,51 +216,69 @@ footer {
     font-size: 1.3rem;
   }
 
-  fieldset {
-    margin: 2em 0;
-    padding: 1em 2em;
-    border: solid 1px #615f5f;
-    border-radius: 6px;
-    min-width: 200px;
+  form.aform {
+    width: 100%; /* Makes it responsive */
+    max-width: 400px; /* Prevents the form from becoming too wide */
+    padding: 20px;
+    margin: 20px auto; /* Centers on the screen */
+    background-color: var(--section-color);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    box-sizing: border-box;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
 }
 
 legend {
-    font-size: 1.25em;
-    padding: 0 .25em;
-    color: #615f5f;
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
 label {
     display: block;
     margin-top: 1em;
+    font-size: 1rem;
+    text-align: left;
 }
 
-label:first-of-type {
-    margin-top: 0;
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%; /* Full width within the form */
+    max-width: 100%; /* Prevents overflow */
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
-input {
-    padding: .5em;
-    border: solid 1px #999;
-}
-
-input[type="email"], input[type="text"]{
-    width: 15em;
-}
-
-#description {
-    min-height: 8em;
-    min-width: 100%;
-    padding: .5em;
-    border: solid 1px #999;
+textarea {
+    resize: none; /* Prevents unnecessary resizing */
 }
 
 input[type="submit"] {
-    padding: .5em 1em;
-    border-radius: 6px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
     background-color: #333;
-    color: #fff;
-    font-size: .8em;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #444;
 }
 
 #thankyou-main {
@@ -285,7 +303,7 @@ input[type="submit"] {
 
   #submission-details {
     line-height: 2rem;
-    background-color: #cac9c9;
+    background-color: var(--section-color);
     border: var(--border);
     padding: 1rem;
     border-radius: 5px;
@@ -294,9 +312,4 @@ input[type="submit"] {
     text-align: left;
   }
 
-  form {
-    align-items: center;
-    text-align: left;
-    width: 100%;
-  }
 

@@ -88,21 +88,13 @@
 
     #submission-details {
         min-width: 800px;
-        line-height: 4rem;
-        font-size: larger;
+        line-height: 3rem;
+        font-size: 1.5rem;
+       
     }
 
-     legend {
-        font-size: 1.75em;
+    form.aform {
+        max-width: 1000px;
     }
 
-    fieldset {
-        width: 100%;
-        min-width: 320px;
-        margin: auto;
-    }
-
-    textarea {
-        max-width: 100px;
-    }
 }
