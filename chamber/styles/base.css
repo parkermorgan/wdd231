@@ -499,6 +499,7 @@ dialog {
 
     .outdoorLinks a {
         text-decoration: none;
+        color:darkblue;
     }
 
     .discover-header {
