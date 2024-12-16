@@ -1,10 +1,11 @@
 
 :root {
-    --font-family: "Montserrat", sans-serif;
+    --font-family: "Merienda", cursive;
     --background-color: lightgrey;
     --background-accent: rgb(0,74,173);
     --border: 3px solid black;
     --shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    --section-color:rgb(218, 214, 206);
 }
 
 /* Reset margin and padding for the entire document */
@@ -443,6 +444,68 @@ dialog {
     .membership-gold {
         animation-delay: 0.6s;
     }
+
+    hr {
+        margin:1rem;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        justify-items: center;
+    }
+
+    .sidebar-card {
+        width: 90%;
+        background-color: var(--section-color);
+        border: var(--border);
+        border-radius: 10px;
+        text-align: center;
+        line-height: 1.6rem;
+    }
+
+    .sidebar-card p {
+        padding:15px;
+    }
+
+    .sidebar-card h2 {
+        background-color: var(--background-accent);
+        padding:15px;
+        border-radius: 5px 5px 0 0;
+        color: white;
+    }
+
+    .image-card img{
+        box-shadow: var(--shadow);
+       
+    }
+
+    .image-card {
+        text-align: center;
+        margin: 1rem;
+    }
+
+    .outdoorLinks {
+        text-align: left;
+        margin-left: 3rem;
+        margin-top: 1rem;
+    }
+
+    .outdoorLinks a {
+        text-decoration: none;
+    }
+
+    .discover-header {
+        text-align: center;
+    }
+
+
 @media only screen and (max-width: 56.25em) {
     #call_to_action {
         position: absolute; 

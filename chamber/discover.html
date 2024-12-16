@@ -6,12 +6,16 @@
     <meta name="description" content="This is the discover page for the chamber of commerce site">
     <meta name="author" content="Parker Morgan">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Oswald:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="../scripts/dateModified.js" defer></script>
     <script src="../scripts/hamMenu.js" defer></script>
-    <title>Chamber of Commerce Discover Page</title>
+    <script src="scripts/lastvisited.js" defer></script>
+    <title>Rexburg Chamber of Commerce Discover Page</title>
 </head>
 <body>
     <header>
@@ -31,6 +35,74 @@
             <li class="active-item"><a href="discover.html" title="Discover">Discover</a></li>
         </ul>
     </nav>
+    <main>
+        <h1 class="discover-header">Discover Rexburg, Idaho</h1>
+        <hr>
+        <div class="grid-container">
+            <div class="sidebar-container">
+                <section class="sidebar-card">
+                    <h2>Welcome Message</h2>
+                    <p id="sidebarMessage"></p>
+                </section>
+                <section class="sidebar-card">
+                    <h2>Explore the Great Outdoors</h2>
+                    <p>Rexburg is a gateway to some of the most stunning natural landscapes in Idaho. Visitors can hike, bike, or enjoy winter sports in the nearby Targhee National Forest, Grand Targhee Resort, and Island Park. The Henry's Fork of the Snake River is a prime location for fly fishing, while the Rexburg Rapids water park offers family-friendly fun during summer.
+                        <ul class="outdoorLinks">
+                            <li><a href="https://www.fs.usda.gov/ctnf">Targhee National Forest</a></li>
+                            <li><a href="https://islandparkid.govoffice2.com/">Island Park</a></li>
+                            <li><a href="https://visitidaho.org/things-to-do/fishing/henrys-fork-of-the-snake/">Henry's Fork</a></li>
+                            <li><a href="https://www.rexburg.org/o/rapids">Rexburg Rapids</a></li>
+                        </ul>
+                    </p>
+                </section>
+                <section class="sidebar-card">
+                    <h2>Local History and Culture</h2>
+                    <p>Rexburg is home to rich cultural history and heritage. Learn about the region’s early pioneers at the Madison County Historical Museum or visit the iconic Rexburg Tabernacle, a historic site for the community's religious gatherings. For a glimpse into the town’s cultural importance, explore the Brigham Young University-Idaho (BYU-Idaho) campus, which hosts regular performances, art exhibits, and cultural events.</p>
+                </section>
+                <section class="sidebar-card">
+                    <h2>Festivals and Events</h2>
+                    <p>Rexburg is a lively town with year-round events. Attend the Rexburg Summer Festival, which includes parades, live music, and food vendors, or the Rexburg Winterfest, a festive holiday event complete with light displays and outdoor activities. Local arts and music festivals are also a regular highlight, providing entertainment and opportunities to discover the local talent.</p>
+                </section>
+            </div>
+            <div class="image-container">
+                <section class="image-card">
+                    <img src="images/targhee-national forest.webp" alt="Targhee National Forest" loading="lazy">
+                    <figcaption>Targhee National Forest</figcaption>
+                </section>
+                <section class="image-card">
+                    <img src="images/islandpark.webp" alt="Island Park" loading="lazy">
+                    <figcaption>Island Park</figcaption>
+                </section>
+                <section class="image-card">
+                    <img src="images/henrysfork.webp" alt="Henry's Fork" loading="lazy">
+                    <figcaption>Henry's Fork</figcaption>
+                </section>
+                <section class="image-card">
+                    <img src="images/rexburgrapids.webp" alt="Rexburg Rapids" loading="lazy">
+                    <figcaption>Rexburg Rapids</figcaption>
+                </section>
+                <section class="image-card">
+                    <img src="images/byui.webp" alt="BYU-Idaho" loading="lazy">
+                    <figcaption>BYU-Idaho</figcaption>
+                </section>
+                <section class="image-card">
+                    <img src="images/mesafalls.webp" alt="Mesa Falls" loading="lazy">
+                    <figcaption>Mesa Falls</figcaption>
+                </section>
+                <section class="image-card">
+                    <img src="images/rexburgtemple.webp" alt="Rexburg Idaho Temple" loading="lazy">
+                    <figcaption>Rexburg, Idaho Temple</figcaption>
+                </section>
+                <section class="image-card">
+                    <img src="images/naturepark.webp" alt="Nature Park" loading="lazy">
+                    <figcaption>Nature Park</figcaption>
+                </section>
+                <section class="image-card">
+                    <img src="images/historicalmuseum.webp" alt="Madison County Historical Museum" loading="lazy">
+                    <figcaption>Madison County Historical Museum</figcaption>
+                </section>
+            </div>
+    </main>
     <footer>
         <p>
             &copy;
@@ -38,6 +110,10 @@
             | Parker Morgan | Vancouver - Washington
         </p>
             <span id="lastModified"></span>
+
+            <script>
+                document.getElementById('timestamp').value = new Date().toISOString();
+            </script>
     </footer>
 </body>
 </html>

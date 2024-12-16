@@ -223,4 +223,34 @@
         font-size: larger;
     }
 
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin: 2rem;
+    }
+
+    .image-container {
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .image-card img {
+        max-width: 1000px;
+    }
+
+    .sidebar-card {
+        width: 90%;
+        height: 90%;
+    }
+
+    .image-card:hover{
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        transform: scale(1.05);
+    }
+
+    .outdoorLinks a:hover {
+        text-decoration: underline;
+    }
+
 }
