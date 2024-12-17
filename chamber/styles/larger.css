@@ -236,12 +236,12 @@
     }
 
     .image-card img {
-        max-width: 1000px;
+        max-width: 300px;
     }
 
     .sidebar-card {
         width: 90%;
-        height: 90%;
+        height: auto;
     }
 
     .image-card:hover{
