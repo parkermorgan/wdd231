@@ -74,10 +74,7 @@
     #memberDetails button {
         height: 50px;
     }
-
-    .familyphoto {
-        content: url("/memories/images/morganFamily.webp");
-    }
+  
 
     #individuals {
         display: flex;

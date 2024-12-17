@@ -38,15 +38,18 @@
     </nav>
     <main>
         <div id="main-container">
-            <section class="family-photo">
+            <div class="family-photo">
                 <figure>
-                    <img class="familyphoto" src="images/morganFamilySmall.webp" alt="Photo of Dave and Kristyn Morgan Family">
+                    <picture>
+                        <source srcset="images/morganFamily.webp" media="(min-width: 1024px)">
+                        <img class="familyphoto" src="images/morganFamilySmall.webp" alt="Photo of Dave and Kristyn Morgan Family">
+                    </picture>
                     <figcaption>Dave and Kristyn Morgan Family</figcaption>
                 </figure>
-            </section>
+            </div>
             <section class="family-buttons">
                 <div class="buttontext">
-                    <h1 class="familyheader">Family Members - Click to learn more</h1>
+                    <h2 class="familyheader">Family Members - Click to learn more</h1>
                     
                     <div class="buttons">
                         <button onclick="filterFamily('all')">All</button>
@@ -60,7 +63,6 @@
                 <dialog id="memberDetails"></dialog>
             </section>
         </div>
-    </div>
     </main>
     <footer>
         <p>
