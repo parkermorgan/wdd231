@@ -27,6 +27,9 @@ img {
     width: 100%;
 }
 
+.buttons {
+    flex-wrap: wrap; /* Wrap buttons to the next row if needed */
+}
 
 body {
     font-family: var(--font-family);
@@ -136,8 +139,7 @@ header {
 }
 
 .buttons {
-    display: flex;
-    flex-direction: row; 
+    display: flex; 
     align-items: center;
     justify-content: center;
     gap: 5px; 

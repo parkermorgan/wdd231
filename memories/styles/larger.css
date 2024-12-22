@@ -94,4 +94,9 @@
         max-width: 1000px;
     }
 
+    .buttons {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
 }
